@@ -1,0 +1,37 @@
+[gd_scene load_steps=5 format=3 uid="uid://ct3eso63tausj"]
+
+[ext_resource type="Script" uid="uid://bn4oas7mktknn" path="res://Scripts/spike.gd" id="1_7wjpu"]
+[ext_resource type="Texture2D" uid="uid://dxyrxw04iyrgv" path="res://Assets/Tiles/Tileset_Basic.png" id="2_1hotg"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_2mnih"]
+atlas = ExtResource("2_1hotg")
+region = Rect2(0, 16, 16, 16)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_rtdfs"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_2mnih")
+}],
+"loop": true,
+"name": &"default",
+"speed": 5.0
+}]
+
+[node name="Spike" type="Area2D"]
+collision_mask = 2
+script = ExtResource("1_7wjpu")
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
+position = Vector2(0, -8)
+sprite_frames = SubResource("SpriteFrames_rtdfs")
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="."]
+polygon = PackedVector2Array(0, 0, -8, 0, 0, -8, 8, 0)
+
+[node name="Timer" type="Timer" parent="."]
+wait_time = 0.1
+one_shot = true
+
+[connection signal="body_entered" from="." to="." method="_on_body_entered"]
+[connection signal="timeout" from="Timer" to="." method="_on_timer_timeout"]
