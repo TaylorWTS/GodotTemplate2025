@@ -1,21 +1,21 @@
 [gd_scene load_steps=7 format=3 uid="uid://b15gv8xd0cybb"]
 
 [ext_resource type="Script" uid="uid://vhyocysecqw8" path="res://Scripts/door.gd" id="1_p0e35"]
-[ext_resource type="Texture2D" uid="uid://dxyrxw04iyrgv" path="res://Assets/Tiles/Tileset_Basic.png" id="1_w6aom"]
-
-[sub_resource type="AtlasTexture" id="AtlasTexture_p0e35"]
-atlas = ExtResource("1_w6aom")
-region = Rect2(48, 48, 16, 16)
+[ext_resource type="Texture2D" uid="uid://cbooyoosdp2uc" path="res://Assets/Items/Items.png" id="2_p0e35"]
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_fahql"]
-atlas = ExtResource("1_w6aom")
-region = Rect2(32, 48, 16, 16)
+atlas = ExtResource("2_p0e35")
+region = Rect2(48, 64, 16, 16)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_ab4ky"]
+atlas = ExtResource("2_p0e35")
+region = Rect2(32, 64, 16, 16)
 
 [sub_resource type="SpriteFrames" id="SpriteFrames_h7j2x"]
 animations = [{
 "frames": [{
 "duration": 1.0,
-"texture": SubResource("AtlasTexture_p0e35")
+"texture": SubResource("AtlasTexture_fahql")
 }],
 "loop": false,
 "name": &"Closed",
@@ -23,7 +23,7 @@ animations = [{
 }, {
 "frames": [{
 "duration": 1.0,
-"texture": SubResource("AtlasTexture_fahql")
+"texture": SubResource("AtlasTexture_ab4ky")
 }],
 "loop": false,
 "name": &"open",
@@ -39,7 +39,7 @@ script = ExtResource("1_p0e35")
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
 sprite_frames = SubResource("SpriteFrames_h7j2x")
-animation = &"Closed"
+animation = &"open"
 autoplay = "Closed"
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]

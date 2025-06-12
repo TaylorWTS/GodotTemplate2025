@@ -1,11 +1,11 @@
 [gd_scene load_steps=5 format=3 uid="uid://ct3eso63tausj"]
 
 [ext_resource type="Script" uid="uid://bn4oas7mktknn" path="res://Scripts/spike.gd" id="1_7wjpu"]
-[ext_resource type="Texture2D" uid="uid://dxyrxw04iyrgv" path="res://Assets/Tiles/Tileset_Basic.png" id="2_1hotg"]
+[ext_resource type="Texture2D" uid="uid://cbooyoosdp2uc" path="res://Assets/Items/Items.png" id="2_1hotg"]
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_2mnih"]
 atlas = ExtResource("2_1hotg")
-region = Rect2(0, 16, 16, 16)
+region = Rect2(48, 32, 16, 16)
 
 [sub_resource type="SpriteFrames" id="SpriteFrames_rtdfs"]
 animations = [{
