@@ -111,9 +111,3 @@ position = Vector2(80, 8)
 position = Vector2(32, 0)
 
 [node name="Player" parent="." instance=ExtResource("4_rf6l5")]
-
-[node name="Camera2D" type="Camera2D" parent="Player"]
-zoom = Vector2(4, 4)
-limit_bottom = 120
-limit_smoothed = true
-position_smoothing_enabled = true

@@ -98,6 +98,7 @@ height = 16.0
 
 [node name="Player" type="CharacterBody2D"]
 collision_layer = 2
+collision_mask = 5
 script = ExtResource("1_xsjp3")
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
@@ -108,3 +109,9 @@ frame_progress = 0.939169
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
 shape = SubResource("CapsuleShape2D_6d0hk")
+
+[node name="Camera2D" type="Camera2D" parent="."]
+zoom = Vector2(4, 4)
+limit_bottom = 120
+limit_smoothed = true
+position_smoothing_enabled = true

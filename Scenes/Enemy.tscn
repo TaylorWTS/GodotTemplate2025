@@ -47,6 +47,7 @@ size = Vector2(16, 4)
 size = Vector2(16, 4)
 
 [node name="Enemy" type="CharacterBody2D"]
+collision_layer = 4
 collision_mask = 3
 script = ExtResource("1_xeo28")
 
