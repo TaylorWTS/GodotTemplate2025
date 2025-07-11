@@ -1,7 +1,8 @@
-[gd_scene load_steps=7 format=3 uid="uid://b15gv8xd0cybb"]
+[gd_scene load_steps=8 format=3 uid="uid://b15gv8xd0cybb"]
 
 [ext_resource type="Script" uid="uid://vhyocysecqw8" path="res://Scripts/door.gd" id="1_p0e35"]
 [ext_resource type="Texture2D" uid="uid://cbooyoosdp2uc" path="res://Assets/Items/Items.png" id="2_p0e35"]
+[ext_resource type="AudioStream" uid="uid://bdj2cvlssi5sr" path="res://Assets/Sound/SFX/High_Score.ogg" id="3_fahql"]
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_fahql"]
 atlas = ExtResource("2_p0e35")
@@ -49,5 +50,9 @@ shape = SubResource("RectangleShape2D_h7j2x")
 wait_time = 0.2
 one_shot = true
 
+[node name="Open" type="AudioStreamPlayer2D" parent="."]
+stream = ExtResource("3_fahql")
+
 [connection signal="body_entered" from="." to="." method="_on_body_entered"]
 [connection signal="timeout" from="Timer" to="." method="_on_timer_timeout"]
+[connection signal="finished" from="Open" to="." method="_on_open_finished"]

@@ -1,3 +1,14 @@
-res://Scenes/Player.tscn
 res://Levels/level_1.tscn
+res://Scenes/Player.tscn
+res://Levels/game.tscn
+res://Scenes/door.tscn
+res://Scripts/door.gd
+res://Levels/level_2.tscn
+res://Levels/level_4.tscn
+res://Levels/level_3.tscn
+res://default_bus_layout.tres
+res://Scripts/Player.gd
 res://Scenes/Enemy.tscn
+res://Scenes/spike.tscn
+res://Scenes/coin.tscn
+res://Scripts/coin.gd

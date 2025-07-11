@@ -1,7 +1,9 @@
-[gd_scene load_steps=15 format=3 uid="uid://bmuijr3hg0i1l"]
+[gd_scene load_steps=19 format=3 uid="uid://bmuijr3hg0i1l"]
 
 [ext_resource type="Script" uid="uid://bkb0nte6r4f3n" path="res://Scripts/Player.gd" id="1_xsjp3"]
 [ext_resource type="Texture2D" uid="uid://dpgdyseynvy2t" path="res://Assets/Player/Player_Basic.png" id="2_d127r"]
+[ext_resource type="AudioStream" uid="uid://vkyvy5hg2dd7" path="res://Assets/Sound/SFX/Jump.ogg" id="3_dewec"]
+[ext_resource type="AudioStream" uid="uid://o80ndbnr6onr" path="res://Assets/Sound/SFX/NewWalk.mp3" id="4_dewec"]
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_kyqiw"]
 atlas = ExtResource("2_d127r")
@@ -27,10 +29,6 @@ region = Rect2(0, 32, 16, 16)
 atlas = ExtResource("2_d127r")
 region = Rect2(16, 32, 16, 16)
 
-[sub_resource type="AtlasTexture" id="AtlasTexture_bhhdu"]
-atlas = ExtResource("2_d127r")
-region = Rect2(0, 0, 16, 16)
-
 [sub_resource type="AtlasTexture" id="AtlasTexture_megsn"]
 atlas = ExtResource("2_d127r")
 region = Rect2(16, 0, 16, 16)
@@ -42,6 +40,10 @@ region = Rect2(32, 0, 16, 16)
 [sub_resource type="AtlasTexture" id="AtlasTexture_ksbbd"]
 atlas = ExtResource("2_d127r")
 region = Rect2(48, 0, 16, 16)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_bhhdu"]
+atlas = ExtResource("2_d127r")
+region = Rect2(0, 0, 16, 16)
 
 [sub_resource type="SpriteFrames" id="SpriteFrames_ldikj"]
 resource_name = "Player"
@@ -76,9 +78,6 @@ animations = [{
 }, {
 "frames": [{
 "duration": 1.0,
-"texture": SubResource("AtlasTexture_bhhdu")
-}, {
-"duration": 1.0,
 "texture": SubResource("AtlasTexture_megsn")
 }, {
 "duration": 1.0,
@@ -86,6 +85,9 @@ animations = [{
 }, {
 "duration": 1.0,
 "texture": SubResource("AtlasTexture_ksbbd")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_bhhdu")
 }],
 "loop": true,
 "name": &"Walk",
@@ -96,6 +98,16 @@ animations = [{
 radius = 7.0
 height = 16.0
 
+[sub_resource type="AudioStreamRandomizer" id="AudioStreamRandomizer_gntrk"]
+random_pitch = 1.1
+streams_count = 1
+stream_0/stream = ExtResource("3_dewec")
+
+[sub_resource type="AudioStreamRandomizer" id="AudioStreamRandomizer_dewec"]
+random_pitch = 1.1
+streams_count = 1
+stream_0/stream = ExtResource("4_dewec")
+
 [node name="Player" type="CharacterBody2D"]
 collision_layer = 2
 collision_mask = 5
@@ -105,7 +117,6 @@ script = ExtResource("1_xsjp3")
 sprite_frames = SubResource("SpriteFrames_ldikj")
 animation = &"Walk"
 autoplay = "Idle"
-frame_progress = 0.939169
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
 shape = SubResource("CapsuleShape2D_6d0hk")
@@ -115,3 +126,11 @@ zoom = Vector2(4, 4)
 limit_bottom = 120
 limit_smoothed = true
 position_smoothing_enabled = true
+
+[node name="PlayerJump" type="AudioStreamPlayer2D" parent="."]
+stream = SubResource("AudioStreamRandomizer_gntrk")
+bus = &"SFX"
+
+[node name="PlayerWalk" type="AudioStreamPlayer2D" parent="."]
+stream = SubResource("AudioStreamRandomizer_dewec")
+bus = &"SFX"

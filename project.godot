@@ -13,7 +13,6 @@ config_version=5
 config/name="Template"
 run/main_scene="uid://y5pud20vmwaw"
 config/features=PackedStringArray("4.4", "Forward Plus")
-config/icon="res://Assets/icon.svg"
 
 [dotnet]
 

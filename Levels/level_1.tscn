@@ -1,4 +1,4 @@
-[gd_scene load_steps=16 format=4 uid="uid://y5pud20vmwaw"]
+[gd_scene load_steps=17 format=4 uid="uid://y5pud20vmwaw"]
 
 [ext_resource type="Texture2D" uid="uid://dxyrxw04iyrgv" path="res://Assets/Tiles/Tileset_Basic.png" id="1_dilhk"]
 [ext_resource type="Texture2D" uid="uid://k3hbbelfhlux" path="res://Assets/Tiles/Back_Ground.png" id="1_rfktq"]
@@ -6,6 +6,7 @@
 [ext_resource type="PackedScene" uid="uid://b15gv8xd0cybb" path="res://Scenes/door.tscn" id="3_3mhv4"]
 [ext_resource type="PackedScene" uid="uid://bmuijr3hg0i1l" path="res://Scenes/Player.tscn" id="4_rf6l5"]
 [ext_resource type="PackedScene" uid="uid://ce675xpx2008t" path="res://Scenes/coin.tscn" id="5_syshm"]
+[ext_resource type="AudioStream" uid="uid://bn5c7ku28ohl6" path="res://Assets/Sound/Music/Music_Loop_1.ogg" id="7_0urlm"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_rfktq"]
 texture = ExtResource("1_rfktq")
@@ -111,3 +112,8 @@ position = Vector2(80, 8)
 position = Vector2(32, 0)
 
 [node name="Player" parent="." instance=ExtResource("4_rf6l5")]
+
+[node name="Music" type="AudioStreamPlayer2D" parent="."]
+stream = ExtResource("7_0urlm")
+autoplay = true
+parameters/looping = true

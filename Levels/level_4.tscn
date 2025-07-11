@@ -98,12 +98,6 @@ shape = SubResource("WorldBoundaryShape2D_dilhk")
 
 [node name="Player" parent="." instance=ExtResource("4_fqog2")]
 
-[node name="Camera2D" type="Camera2D" parent="Player"]
-zoom = Vector2(4, 4)
-limit_bottom = 120
-limit_smoothed = true
-position_smoothing_enabled = true
-
 [node name="RichTextLabel" type="RichTextLabel" parent="."]
 offset_left = -38.0
 offset_top = -44.0
