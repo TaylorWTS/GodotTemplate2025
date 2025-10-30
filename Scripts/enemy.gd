@@ -1,9 +1,12 @@
 extends CharacterBody2D
 
+#enemy movement speed
 const Speed = 30
 # Get the gravity from the project settings to be synced with RigidBody nodes.
 var gravity = ProjectSettings.get_setting("physics/2d/default_gravity")
+#checking that the enemy is on the ground
 var OnFloor = true
+#
 var Direction = 1
 @onready var ray_cast_2d_right: RayCast2D = $RayCast2DRight
 @onready var ray_cast_2d_left: RayCast2D = $RayCast2DLeft
