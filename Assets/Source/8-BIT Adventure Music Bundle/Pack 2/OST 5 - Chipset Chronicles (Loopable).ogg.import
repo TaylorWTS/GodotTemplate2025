@@ -1,0 +1,19 @@
+[remap]
+
+importer="oggvorbisstr"
+type="AudioStreamOggVorbis"
+uid="uid://buivon3tvyrku"
+path="res://.godot/imported/OST 5 - Chipset Chronicles (Loopable).ogg-fafc4c9882703d617b7f68ba03a1dd9f.oggvorbisstr"
+
+[deps]
+
+source_file="res://Assets/Source/8-BIT Adventure Music Bundle/Pack 2/OST 5 - Chipset Chronicles (Loopable).ogg"
+dest_files=["res://.godot/imported/OST 5 - Chipset Chronicles (Loopable).ogg-fafc4c9882703d617b7f68ba03a1dd9f.oggvorbisstr"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

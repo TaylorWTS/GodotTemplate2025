@@ -1,0 +1,19 @@
+[remap]
+
+importer="oggvorbisstr"
+type="AudioStreamOggVorbis"
+uid="uid://djnwyv8rst81m"
+path="res://.godot/imported/8-BIT OST - Blue Light Blues.ogg-427ef4d29c65723ef535aaa3f19667ee.oggvorbisstr"
+
+[deps]
+
+source_file="res://Assets/Source/8-BIT Adventure Music Bundle/Pack 4/8-BIT OST - Blue Light Blues.ogg"
+dest_files=["res://.godot/imported/8-BIT OST - Blue Light Blues.ogg-427ef4d29c65723ef535aaa3f19667ee.oggvorbisstr"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

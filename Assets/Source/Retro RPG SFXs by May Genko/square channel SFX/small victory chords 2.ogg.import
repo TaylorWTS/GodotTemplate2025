@@ -1,0 +1,19 @@
+[remap]
+
+importer="oggvorbisstr"
+type="AudioStreamOggVorbis"
+uid="uid://dde6007wg5j0n"
+path="res://.godot/imported/small victory chords 2.ogg-1d103e52f206a972301949a07f72e708.oggvorbisstr"
+
+[deps]
+
+source_file="res://Assets/Source/Retro RPG SFXs by May Genko/square channel SFX/small victory chords 2.ogg"
+dest_files=["res://.godot/imported/small victory chords 2.ogg-1d103e52f206a972301949a07f72e708.oggvorbisstr"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

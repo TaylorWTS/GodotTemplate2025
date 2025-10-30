@@ -1,0 +1,19 @@
+[remap]
+
+importer="oggvorbisstr"
+type="AudioStreamOggVorbis"
+uid="uid://duk3ly1e5xlhd"
+path="res://.godot/imported/OST 1 - Wicked Witch (Loopable).ogg-1f5ea8ff28f57a90e05005f8e07ac163.oggvorbisstr"
+
+[deps]
+
+source_file="res://Assets/Source/8-BIT Adventure Music Bundle/Pack 2/OST 1 - Wicked Witch (Loopable).ogg"
+dest_files=["res://.godot/imported/OST 1 - Wicked Witch (Loopable).ogg-1f5ea8ff28f57a90e05005f8e07ac163.oggvorbisstr"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

@@ -1,0 +1,19 @@
+[remap]
+
+importer="oggvorbisstr"
+type="AudioStreamOggVorbis"
+uid="uid://b00r0e5fhttbl"
+path="res://.godot/imported/8-BIT OST - !The End.ogg-c24939c317fb0f0b91cbb43c5ca2696b.oggvorbisstr"
+
+[deps]
+
+source_file="res://Assets/Source/8-BIT Adventure Music Bundle/Pack 5/8-BIT OST - !The End.ogg"
+dest_files=["res://.godot/imported/8-BIT OST - !The End.ogg-c24939c317fb0f0b91cbb43c5ca2696b.oggvorbisstr"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

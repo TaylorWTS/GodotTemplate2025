@@ -1,0 +1,19 @@
+[remap]
+
+importer="oggvorbisstr"
+type="AudioStreamOggVorbis"
+uid="uid://gmfbcxbmmqym"
+path="res://.godot/imported/8-BIT 3 - Arcade Ascension.ogg-96c268e3f1db1915fd8295ae60d7e0e2.oggvorbisstr"
+
+[deps]
+
+source_file="res://Assets/Source/8-BIT Adventure Music Bundle/Pack 3/8-BIT 3 - Arcade Ascension.ogg"
+dest_files=["res://.godot/imported/8-BIT 3 - Arcade Ascension.ogg-96c268e3f1db1915fd8295ae60d7e0e2.oggvorbisstr"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

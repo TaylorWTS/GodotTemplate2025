@@ -1,0 +1,19 @@
+[remap]
+
+importer="oggvorbisstr"
+type="AudioStreamOggVorbis"
+uid="uid://cf22cno4crjj3"
+path="res://.godot/imported/8-BIT OST - BITCRUSHER.ogg-8c7f462354def2d448e095edfb5b01b8.oggvorbisstr"
+
+[deps]
+
+source_file="res://Assets/Source/8-BIT Adventure Music Bundle/Pack 4/8-BIT OST - BITCRUSHER.ogg"
+dest_files=["res://.godot/imported/8-BIT OST - BITCRUSHER.ogg-8c7f462354def2d448e095edfb5b01b8.oggvorbisstr"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

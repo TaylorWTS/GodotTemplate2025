@@ -1,0 +1,19 @@
+[remap]
+
+importer="oggvorbisstr"
+type="AudioStreamOggVorbis"
+uid="uid://be0tv3ek4tdk6"
+path="res://.godot/imported/bad beeps 4.ogg-abd188d38667afcbc58a5a1125916448.oggvorbisstr"
+
+[deps]
+
+source_file="res://Assets/Source/Retro RPG SFXs by May Genko/square channel SFX/bad beeps 4.ogg"
+dest_files=["res://.godot/imported/bad beeps 4.ogg-abd188d38667afcbc58a5a1125916448.oggvorbisstr"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

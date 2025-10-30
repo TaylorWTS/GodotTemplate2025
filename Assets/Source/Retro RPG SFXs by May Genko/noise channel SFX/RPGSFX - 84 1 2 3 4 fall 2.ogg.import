@@ -1,0 +1,19 @@
+[remap]
+
+importer="oggvorbisstr"
+type="AudioStreamOggVorbis"
+uid="uid://b6re5x2dx5x4t"
+path="res://.godot/imported/RPGSFX - 84 1 2 3 4 fall 2.ogg-5b30c7c2aca778b23e914069ffd09818.oggvorbisstr"
+
+[deps]
+
+source_file="res://Assets/Source/Retro RPG SFXs by May Genko/noise channel SFX/RPGSFX - 84 1 2 3 4 fall 2.ogg"
+dest_files=["res://.godot/imported/RPGSFX - 84 1 2 3 4 fall 2.ogg-5b30c7c2aca778b23e914069ffd09818.oggvorbisstr"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

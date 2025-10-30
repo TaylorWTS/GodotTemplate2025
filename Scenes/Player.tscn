@@ -115,3 +115,7 @@ zoom = Vector2(4, 4)
 limit_bottom = 120
 limit_smoothed = true
 position_smoothing_enabled = true
+
+[node name="Timer" type="Timer" parent="."]
+wait_time = 0.15
+one_shot = true
