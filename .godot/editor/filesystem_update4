@@ -7,3 +7,5 @@ res://Levels/level_4.tscn
 res://Scripts/coin.gd
 res://Scripts/door.gd
 res://Scripts/enemy.gd
+res://Scripts/spike.gd
+res://Scripts/Player.gd
